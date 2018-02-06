@@ -5,10 +5,12 @@
     "main": "server.js",
     "author": "Corey Mangan",
     "dependencies": {
-        "express": "~4.7.2",
-        "mongoose": "~3.6.2",
-        "morgan": "~1.2.2",
         "body-parser": "~1.5.2",
-        "method-override": "~2.1.2"
+        "chai": "^4.1.2",
+        "express": "~4.7.2",
+        "method-override": "~2.1.2",
+        "mocha": "^5.0.0",
+        "mongoose": "~3.6.2",
+        "morgan": "~1.2.2"
     }
 }
