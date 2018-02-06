@@ -4,6 +4,9 @@
     "description": "A simple todo app",
     "main": "server.js",
     "author": "Corey Mangan",
+    "scripts": {
+        "test": "mocha ./tests/app-test.js"
+    },
     "dependencies": {
         "body-parser": "~1.5.2",
         "chai": "^4.1.2",
@@ -11,6 +14,7 @@
         "method-override": "~2.1.2",
         "mocha": "^5.0.0",
         "mongoose": "~3.6.2",
-        "morgan": "~1.2.2"
+        "morgan": "~1.2.2",
+        "request": "^2.83.0"
     }
 }

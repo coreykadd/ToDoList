@@ -1,7 +1,7 @@
 //Server.js
 
 //Setup
-var express = requre('express');
+var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var morgan = require('morgan');  //Logs requests to the console
@@ -17,3 +17,7 @@ app.use(bodyParser.urlencoded({'extended': 'true'})); //Parse application/x-www-
 app.use(bodyParser.json()); //Parse application/json
 app.use(bodyParser.json({type: 'application/vnd.api+json'})); //Parse application/vnd.api+json as json
 app.use(methodOverride());
+
+//Listen
+app.listen(8080);
+console.log('App listening to port 8080');
