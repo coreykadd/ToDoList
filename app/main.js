@@ -1,5 +1,5 @@
 //main.js
-var Todo = angular.module('todo', []);
+var Todo = angular.module('Todo', []);
 
 function mainController($scope, $http) {
     $scope.formData = {};
@@ -16,7 +16,7 @@ function mainController($scope, $http) {
 
     //When submitting add form and send text to api
     $scope.createTodo = function(){
-        $http.post('api/todos', $scope.formData)
+        $http.post('/api/todos', $scope.formData)
         .success(function(data){
             $scope.formData = {};
             $scope.todos = data;

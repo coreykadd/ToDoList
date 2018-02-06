@@ -33,9 +33,9 @@ var Todo = mongoose.model('Todo', {
 });
 
 //Routes
-app.get('/', function(req, res){
+/*app.get('/', function(req, res){
     res.send('hello');
-});
+});*/
 
 app.get('/api/todos', function(req, res) {
     Todo.find(function(err, todos) {
@@ -76,7 +76,7 @@ app.delete('/api/todos/:todo_id', function(req, res){
 
 //Application
 app.get('*', function(req, res){
-    res.sendfile('./public/index.html');
+    res.sendfile('./app/index.html');
 });
 
 //Listen
